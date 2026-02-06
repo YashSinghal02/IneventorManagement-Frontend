@@ -1,0 +1,123 @@
+.leftside-main {
+    background-color: #2d3748;
+    width: 260px;
+    /* If height no then background color full color otherwise short */
+    /* height: 100vh;             */
+    display: flex;            
+    flex-direction: column;
+    padding: 24px 0;
+    box-sizing: border-box;
+}
+
+.leftside-main ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;         
+}
+
+.leftside-main li {
+    width: 100%;
+}
+
+.leftside-main a {
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    color: #e2e8f0;
+    text-decoration: none;
+    padding: 16px 32px;
+    box-sizing: border-box;
+    border-left: 4px solid transparent;
+    transition: all 0.3s linear;
+}
+
+.leftside-main a:hover {
+    background: #4a5568;
+    border-left-color: #6693da;
+    color: white;
+}
+
+.leftside-main a.active {
+    background: #4a5568;
+    border-left-color: #667eea;
+    color: white;
+}
+
+
+.logout {
+    margin-top: auto;
+}
+
+.logout-icon {
+  color: white;
+  font-size: 22px;
+  display: inline;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .leftside-main {
+        width: 230px;
+    }
+
+    .leftside-main a {
+        font-size: 18px;
+        padding: 14px 24px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .leftside-main {
+        width: 100%;
+        height: auto;       
+        padding: 12px 0;
+    }
+
+    .leftside-main ul {
+        flex-direction: row;
+        height: auto;        
+        overflow-x: auto;
+        justify-content: flex-start;
+    }
+
+    .logout {
+        margin-top: 0;       
+        margin-left: auto;
+    }
+
+    .leftside-main li {
+        width: auto;
+        flex-shrink: 0;
+    }
+
+    .leftside-main a {
+        padding: 12px 20px;
+        font-size: 18px;
+        white-space: nowrap;
+        border-left: none;
+        border-bottom: 4px solid transparent;
+    }
+
+    .leftside-main a:hover,
+    .leftside-main a.active {
+        border-left-color: transparent;
+        border-bottom-color: #667eea;
+    }
+
+    .leftside-main a:hover {
+        border-bottom-color: #6693da;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 400px) {
+    .leftside-main a {
+        padding: 10px 16px;
+        font-size: 18px;
+    }
+}

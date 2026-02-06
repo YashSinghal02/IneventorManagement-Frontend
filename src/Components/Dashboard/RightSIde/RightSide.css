@@ -1,0 +1,16 @@
+.rightside-main {
+  /* flex: 1; */
+  width: 100%;
+  min-height: 100vh;
+  background-color: #e0e6f0;
+  /* background-color: #96befcb1; */
+  padding: 24px;
+  overflow: auto;
+}
+
+@media (max-width: 600px) {
+  .rightside-main {
+    min-height: 100vh;
+    padding: 24px;
+  }
+}

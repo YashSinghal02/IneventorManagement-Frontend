@@ -1,0 +1,19 @@
+.combine{
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    /* gap: 24px; */
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f8fafc;
+    /* padding: 24px; */
+    box-sizing: border-box;
+    flex-direction: row;
+}
+
+@media (max-width: 600px) {
+    .combine {
+        flex-direction: column;
+        min-height: auto;
+    }
+}
